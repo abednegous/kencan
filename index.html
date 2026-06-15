@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal Investasi Kesehatan & Kebahagiaan Resmi ✨</title>
+    <!-- Tailwind CSS for sleek responsive UI -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for beautiful modern icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        kopitiam: {
+                            sage: '#8F9779',
+                            cream: '#FAF6F0',
+                            terracotta: '#D48166',
+                            charcoal: '#2D322B',
+                            gold: '#C49A45'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
+        
+        /* Custom scrollbar for premium feel */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #FAF6F0; }
+        ::-webkit-scrollbar-thumb { background: #8F9779; border-radius: 10px; }
+
+        /* Floating romance particles */
+        .leaf-particle {
+            position: absolute;
+            pointer-events: none;
+            opacity: 0.6;
+            animation: floatDown 8s linear infinite;
+        }
+
+        @keyframes floatDown {
+            0% { transform: translateY(-10%) rotate(0deg) translateX(0); opacity: 0; }
+            50% { opacity: 0.7; }
+            100% { transform: translateY(110vh) rotate(360deg) translateX(50px); opacity: 0; }
+        }
+
+        /* Card open micro-interaction */
+        .envelope-shadow {
+            box-shadow: 0 20px 40px rgba(45, 50, 43, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-kopitiam-cream font-sans text-kopitiam-charcoal min-h-screen relative overflow-x-hidden">
+
+    <!-- Floating Background Leafs/Hearts -->
+    <div id="particle-container" class="absolute inset-0 z-0 pointer-events-none"></div>
+
+    <!-- MAIN SECTION: THE ENVELOPE (FIRST IMPRESSION) -->
+    <section id="envelope-sec" class="min-h-screen flex items-center justify-center p-4 transition-all duration-1000 z-10 relative">
+        <div class="max-w-md w-full bg-white rounded-3xl p-8 border border-kopitiam-sage/30 text-center envelope-shadow transform hover:scale-[1.01] transition-transform">
+            <div class="w-20 h-20 bg-kopitiam-sage/10 rounded-full flex items-center justify-center mx-auto mb-6 text-kopitiam-sage text-3xl animate-bounce">
+                <i class="fa-solid fa-envelope-open-text"></i>
+            </div>
+            <p class="text-xs tracking-widest uppercase font-semibold text-kopitiam-sage mb-2">Dokumen Rahasia Negara</p>
+            <h1 class="font-serif text-3xl font-bold mb-4 text-kopitiam-charcoal">Sebuah Proposal Hari Esok</h1>
+            <p class="text-sm text-gray-500 mb-8 leading-relaxed">Ada sebuah penawaran investasi jangka panjang berupa kesehatan jantung, asupan karbohidrat, dan tawa di pagi hari.</p>
+            <button onclick="openProposal()" class="w-full bg-kopitiam-sage text-white font-semibold py-4 rounded-xl shadow-lg shadow-kopitiam-sage/30 hover:bg-kopitiam-charcoal hover:shadow-none transition-all duration-300">
+                Buka Proposal Resmi <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- PROPOSAL CONTENT (HIDDEN UNTIL ENVELOPE OPENED) -->
+    <main id="proposal-content" class="max-w-4xl mx-auto px-4 py-16 hidden opacity-0 transition-opacity duration-1000 relative z-10">
+        
+        <!-- Header -->
+        <header class="text-center mb-16">
+            <span class="px-4 py-1.5 bg-kopitiam-sage/10 text-kopitiam-sage rounded-full text-xs font-bold uppercase tracking-widest">Limited Edition Date Proposal</span>
+            <h2 class="font-serif text-4xl md:text-5xl font-black mt-4 mb-3 text-kopitiam-charcoal">Lari Pagi & Kulineran Bogor</h2>
+            <p class="text-gray-500 italic max-w-md mx-auto text-sm md:text-base">"Misi rahasia: Membakar 200 kalori demi bisa menimbun kembali 600 kalori di Nakotiam."</p>
+        </header>
+
+        <!-- Interactive Journey Timeline -->
+        <section class="mb-16 bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-kopitiam-sage/10">
+            <h3 class="font-serif text-2xl font-bold mb-8 text-center text-kopitiam-charcoal flex items-center justify-center">
+                <span class="w-8 h-[2px] bg-kopitiam-sage mr-3"></span>
+                Rencana Perjalanan (Itinerary)
+                <span class="w-8 h-[2px] bg-kopitiam-sage ml-3"></span>
+            </h3>
+            
+            <div class="relative border-l-2 border-kopitiam-sage/20 ml-4 md:ml-32 space-y-12">
+                <!-- Step 1 -->
+                <div class="relative pl-8 md:pl-12">
+                    <span class="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-kopitiam-sage flex items-center justify-center text-white text-xs font-bold shadow-md">01</span>
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                        <div>
+                            <span class="text-xs font-bold text-kopitiam-terracotta tracking-wider uppercase">06:00 WIB — Start</span>
+                            <h4 class="font-serif text-xl font-bold text-kopitiam-charcoal mt-1">Sempur / Kebun Raya Bogor 🏃‍♂️</h4>
+                            <p class="text-gray-500 text-sm mt-1 max-w-md">Menghirup udara segar pagi hari, jalan-jalan estetik (atau lari kecil kalau kamu ambisius) sambil memandangi rusa dan pepohonan rindang.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="relative pl-8 md:pl-12">
+                    <span class="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-kopitiam-terracotta flex items-center justify-center text-white text-xs font-bold shadow-md">02</span>
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                        <div>
+                            <span class="text-xs font-bold text-kopitiam-terracotta tracking-wider uppercase">07:30 WIB — Pitstop Utama</span>
+                            <h4 class="font-serif text-xl font-bold text-kopitiam-charcoal mt-1">Nakotiam Kuntum Bogor ☕️🍳</h4>
+                            <p class="text-gray-500 text-sm mt-1 max-w-md">Kopitiam estetik bernuansa vintage peranakan yang hangat. Menunya luar biasa: Butter Kaya Toast yang meleleh, Mie Goreng gurih, Es Cincau Tiam manis, dan Kopi Butter autentik.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Funny Interactive Widget: Calorie Math Counter -->
+        <section class="mb-16 bg-kopitiam-sage text-white rounded-3xl p-8 md:p-12 shadow-xl relative overflow-hidden">
+            <div class="absolute -right-16 -bottom-16 w-48 h-48 bg-white/5 rounded-full blur-2xl"></div>
+            
+            <div class="text-center max-w-xl mx-auto">
+                <i class="fa-solid fa-calculator text-3xl mb-4 text-kopitiam-gold"></i>
+                <h3 class="font-serif text-2xl md:text-3xl font-bold mb-2">Nako Calorie Counter 🧮</h3>
+                <p class="text-xs text-white/80 uppercase tracking-widest font-semibold mb-8">Kalkulator Pembakar Rasa Bersalah</p>
+                
+                <div class="bg-kopitiam-charcoal/30 backdrop-blur-md rounded-2xl p-6 mb-6">
+                    <label class="block text-sm font-semibold mb-4 text-left">Berapa putaran lari besok pagi?</label>
+                    <input type="range" id="run-slider" min="1" max="5" value="2" oninput="calculateRomance()" class="w-full accent-kopitiam-gold cursor-pointer">
+                    <div class="flex justify-between text-xs mt-2 text-white/70 font-bold">
+                        <span>1 Putaran (Pemanasan gosip)</span>
+                        <span>5 Putaran (Masuk Pelatnas)</span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 mt-8">
+                    <div class="bg-white/10 rounded-xl p-4">
+                        <span class="text-xs block text-white/70 uppercase">Kalori Terbakar</span>
+                        <span id="cal-burnt" class="font-serif text-3xl font-black text-kopitiam-gold">-200 kkal</span>
+                    </div>
+                    <div class="bg-white/10 rounded-xl p-4">
+                        <span class="text-xs block text-white/70 uppercase">Asupan Nakotiam</span>
+                        <span id="cal-gained" class="font-serif text-3xl font-black text-red-300">+600 kkal</span>
+                    </div>
+                </div>
+
+                <div class="mt-6 border-t border-white/20 pt-6">
+                    <p class="text-sm font-medium italic">
+                        Hasil Akhir: <span id="net-result" class="font-bold underline text-kopitiam-gold">Keuntungan Bersih Kalori Kebahagiaan!</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA & RSVP CONSOLE -->
+        <section class="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-kopitiam-sage/10 text-center relative">
+            <h3 class="font-serif text-3xl font-bold mb-4 text-kopitiam-charcoal">Jadi, Bagaimana Keputusannya?</h3>
+            <p class="text-gray-500 text-sm max-w-md mx-auto mb-10">Menerima proposal ini berarti menyetujui kencan pagi penuh karbohidrat, tawa, dan sedikit keringat sehat.</p>
+            
+            <div id="btn-group" class="flex flex-col sm:flex-row justify-center items-center gap-4 relative min-h-[100px]">
+                <button onclick="acceptProposal()" class="px-8 py-4 bg-kopitiam-terracotta text-white font-bold rounded-xl shadow-lg shadow-kopitiam-terracotta/30 hover:bg-kopitiam-charcoal hover:shadow-none transition-all duration-300 w-full sm:w-auto text-center z-20">
+                    <i class="fa-solid fa-heart mr-2"></i> Mau Banget!
+                </button>
+                <button id="reject-btn" onmouseover="dodgeButton()" onclick="dodgeButton()" class="px-8 py-4 bg-gray-100 text-gray-500 font-bold rounded-xl border border-gray-200 transition-all duration-300 w-full sm:w-auto text-center z-10 sm:relative">
+                    Enggak Dulu
+                </button>
+            </div>
+            
+            <p id="dialogue-bubble" class="text-xs text-kopitiam-terracotta font-bold mt-4 italic opacity-0 transition-opacity duration-300"></p>
+        </section>
+
+        <!-- DATE TICKET (HIDDEN UNTIL ACCEPTED) -->
+        <section id="ticket-sec" class="mt-16 hidden opacity-0 transition-opacity duration-1000">
+            <div class="bg-white border-2 border-dashed border-kopitiam-sage/40 rounded-3xl overflow-hidden shadow-2xl">
+                <!-- Ticket Header -->
+                <div class="bg-kopitiam-sage text-white p-6 text-center">
+                    <div class="flex justify-between items-center text-xs tracking-widest uppercase font-bold text-white/80">
+                        <span>Official Ticket</span>
+                        <span>Date ID: BGR-06AM-NAKO</span>
+                    </div>
+                    <h4 class="font-serif text-3xl font-bold mt-4">KUPON KENCAN DIGITAL</h4>
+                </div>
+                <!-- Ticket Body -->
+                <div class="p-8 grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+                    <div class="space-y-1">
+                        <span class="text-xs text-gray-400 uppercase tracking-wider font-semibold">TANGGAL & WAKTU</span>
+                        <p class="font-bold text-kopitiam-charcoal">Besok Pagi, Jam 06.00 WIB</p>
+                    </div>
+                    <div class="space-y-1">
+                        <span class="text-xs text-gray-400 uppercase tracking-wider font-semibold">DRESSCODE</span>
+                        <p class="font-bold text-kopitiam-charcoal">Sporty Estetik (Wajib Sepatu Lari)</p>
+                    </div>
+                    <div class="space-y-1">
+                        <span class="text-xs text-gray-400 uppercase tracking-wider font-semibold">PENERIMA PROPOSAL</span>
+                        <p id="ticket-recipient" class="font-bold text-kopitiam-charcoal">Bidadari Paling Cantik</p>
+                    </div>
+                </div>
+                <!-- Barcode and RSVP confirmation action -->
+                <div class="p-8 bg-kopitiam-cream/50 border-t border-dashed border-kopitiam-sage/30 flex flex-col items-center">
+                    <!-- Barcode lookalike -->
+                    <div class="w-48 h-12 flex justify-between mb-4">
+                        <div class="w-1 bg-kopitiam-charcoal h-full"></div>
+                        <div class="w-2 bg-kopitiam-charcoal h-full"></div>
+                        <div class="w-0.5 bg-kopitiam-charcoal h-full"></div>
+                        <div class="w-3 bg-kopitiam-charcoal h-full"></div>
+                        <div class="w-1 bg-kopitiam-charcoal h-full"></div>
+                        <div class="w-2 bg-kopitiam-charcoal h-full"></div>
+                        <div class="w-0.5 bg-kopitiam-charcoal h-full"></div>
+                        <div class="w-3 bg-kopitiam-charcoal h-full"></div>
+                        <div class="w-1 bg-kopitiam-charcoal h-full"></div>
+                    </div>
+                    <p class="text-xs font-mono font-bold text-kopitiam-sage mb-6">BARCODE-COUPLE-GOALS-999</p>
+                    
+                    <a id="wa-btn" href="#" target="_blank" class="px-8 py-3 bg-green-500 hover:bg-green-600 text-white font-bold rounded-xl shadow-lg shadow-green-500/30 flex items-center gap-2 transition-all duration-300">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Amankan Jadwal (Kirim WhatsApp)
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="text-center py-12 text-xs text-gray-400 z-10 relative">
+        <p>&copy; 2026. Dibuat dengan penuh rasa lapar & ketulusan hati.</p>
+    </footer>
+
+    <!-- INTERACTIVE SCRIPTS -->
+    <script>
+        // Generate Falling Rose Petals/Leafs background effect
+        function createFallingLeaves() {
+            const container = document.getElementById('particle-container');
+            const characters = ['🌸', '🍂', '❤️', '🍃'];
+            for(let i = 0; i < 20; i++) {
+                const leaf = document.createElement('span');
+                leaf.classList.add('leaf-particle');
+                leaf.innerText = characters[Math.floor(Math.random() * characters.length)];
+                leaf.style.left = Math.random() * 100 + 'vw';
+                leaf.style.animationDelay = Math.random() * 5 + 's';
+                leaf.style.fontSize = Math.random() * 20 + 10 + 'px';
+                container.appendChild(leaf);
+            }
+        }
+        createFallingLeaves();
+
+        // Reveal proposal flow
+        function openProposal() {
+            const envelope = document.getElementById('envelope-sec');
+            const content = document.getElementById('proposal-content');
+            
+            envelope.classList.add('opacity-0', 'scale-95');
+            setTimeout(() => {
+                envelope.classList.add('hidden');
+                content.classList.remove('hidden');
+                setTimeout(() => {
+                    content.classList.remove('opacity-0');
+                }, 50);
+            }, 1000);
+        }
+
+        // Calorie calculator business logic
+        function calculateRomance() {
+            const sliderVal = document.getElementById('run-slider').value;
+            const burntEl = document.getElementById('cal-burnt');
+            const gainedEl = document.getElementById('cal-gained');
+            const netResultEl = document.getElementById('net-result');
+
+            const caloriesBurnt = sliderVal * 100;
+            const caloriesGained = 600; // Average calories of kaya toast, soft boiled egg + kopi nako
+            
+            burntEl.innerText = `-${caloriesBurnt} kkal`;
+            
+            if(sliderVal < 3) {
+                netResultEl.innerText = "Surplus Kebahagiaan & Roti Kaya! 🍞☕";
+                gainedEl.innerText = "+600 kkal";
+            } else {
+                netResultEl.innerText = "Defisit Kalori, Tapi Surplus Cinta! 💚🏃";
+                gainedEl.innerText = "+450 kkal (Porsi diatur)";
+            }
+        }
+
+        // Runaway Reject Button Interaction (Dodging mechanics)
+        let rejectCount = 0;
+        const dialogs = [
+            "Oops, salah klik tombol ya?",
+            "Ga bisa gitu dong, lari sehat loh!",
+            "Kopi Butternya Nakotiam nungguin nih!",
+            "Sedikit keringat, banyak bahagianya kok.",
+            "Ayolah, demi sepiring mie goreng Nakotiam!",
+            "Sistem error: Tombol Tolak dinonaktifkan."
+        ];
+
+        function dodgeButton() {
+            const btn = document.getElementById('reject-btn');
+            const bubble = document.getElementById('dialogue-bubble');
+            
+            // Randomly position the button to avoid cursor
+            const padding = 100;
+            const x = Math.random() * (window.innerWidth - btn.offsetWidth - padding) + (padding / 2);
+            const y = Math.random() * (window.innerHeight - btn.offsetHeight - padding) + (padding / 2);
+            
+            btn.style.position = 'fixed';
+            btn.style.left = `${x}px`;
+            btn.style.top = `${y}px`;
+            btn.style.zIndex = '999';
+
+            // Show witty dialogue bubbles
+            bubble.innerText = dialogs[rejectCount % dialogs.length];
+            bubble.style.opacity = '1';
+            rejectCount++;
+            
+            // At 6 dodges, turn reject button positive
+            if (rejectCount >= 6) {
+                btn.style.position = 'static';
+                btn.innerText = "Oke, tapi jalannya pelan-pelan ya?";
+                btn.classList.add('bg-kopitiam-sage', 'text-white');
+                btn.onmouseover = null;
+                btn.onclick = acceptProposal;
+            }
+        }
+
+        // Accept Flow
+        function acceptProposal() {
+            const ticketSec = document.getElementById('ticket-sec');
+            const btnGroup = document.getElementById('btn-group');
+            const rejectBtn = document.getElementById('reject-btn');
+            
+            // Hide selection buttons
+            btnGroup.classList.add('opacity-0', 'pointer-events-none');
+            setTimeout(() => {
+                btnGroup.classList.add('hidden');
+            }, 300);
+
+            // Generate WhatsApp RSVP link direct to your number
+            const message = encodeURIComponent("Iya sayang, proposal disetujui! Kita lari pagi besok jam 6 terus sarapan di Nakotiam Bogor! 🏃‍♂️💚");
+            const waLink = `https://wa.me/6285945443144?text=${message}`;
+            document.getElementById('wa-btn').href = waLink;
+
+            // Reveal Ticket
+            ticketSec.classList.remove('hidden');
+            setTimeout(() => {
+                ticketSec.classList.remove('opacity-0');
+                // Scroll ticket into view elegantly
+                ticketSec.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 200);
+        }
+    </script>
+</body>
+</html>
